@@ -45,8 +45,8 @@ function CardTodo({ column, tasks }) {
                         {...draggableProvided.dragHandleProps}
                       >
                         <CardItem
-                          key={index}
-                          id={index}
+                          key={task.id}
+                          id={task.id}
                           title={task.title}
                           issue={task.issueType}
                           priority={task.priority}

@@ -46,7 +46,6 @@ function Body() {
       ...sourceCol,
       taskIds: newTaskIds,
     };
-
     return newColumn;
   };
 
@@ -73,7 +72,7 @@ function Body() {
 
   const onDragEnd = (result) => {
     const { destination, source } = result;
-
+    console.log("result", result);
     // If user tries to drop in an unknown destination
     if (!destination) return;
 
@@ -88,7 +87,7 @@ function Body() {
     // If the user drops within the same column but in a different positoin
     const sourceCol = state.columns[source.droppableId];
     const destinationCol = state.columns[destination.droppableId];
-
+    /*     console.log("state", state); */
     if (sourceCol.id === destinationCol.id) {
       const newColumn = reorderColumnList(
         sourceCol,
@@ -110,6 +109,7 @@ function Body() {
     // If the user moves from one column to another
     const startTaskIds = Array.from(sourceCol.taskIds);
     const [removed] = startTaskIds.splice(source.index, 1);
+
     const newStartCol = {
       ...sourceCol,
       taskIds: startTaskIds,
@@ -122,6 +122,7 @@ function Body() {
       taskIds: endTaskIds,
     };
 
+    setState();
     const newState = {
       ...state,
       columns: {
@@ -165,12 +166,7 @@ function Body() {
         <div className="body_card">
           {state.columnOrder.map((columnId) => {
             const column = state.columns[columnId];
-            console.log("col", state);
-
             const tasks = column.taskIds.map((taskId) => state.tasks[taskId]);
-
-            console.log("tasks", tasks);
-
             return (
               <Suspense fallback={<div>Loading...</div>}>
                 <CardTodo key={column.id} column={column} tasks={tasks} />

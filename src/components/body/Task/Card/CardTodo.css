@@ -1,11 +1,11 @@
 .card {
     width: 290px;
-    height: 70vh;
+    height: 100%;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 1px solid rgba(0, 23, 71, 0.07);
     border-radius: 8px;
-    margin: 24px 24px;    
+    margin: 24px 24px; 
 }
 
 .card > hr {
