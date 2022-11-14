@@ -1,0 +1,120 @@
+.modal_backshadow {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_backshadow .modal {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 4px;
+}
+
+.delete_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:  #2D70FD;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border: none;
+}
+
+.modal_form {
+    padding: 40px;
+}
+
+.modal_issueType > h4, .modal_desc > h4, .modal_priority > h4, .modal_assignee > h4, .modal_point > h4 {
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 500;
+    color: #405175;
+}
+
+.modal_issueType, .modal_priority, .modal_assignee, .modal_point {
+    width: 200px;
+    height: 50px;
+    padding-bottom: 12px;
+}
+
+.modal_select, .modal_point > input {
+    width: 200px;
+    height: 30px;
+    margin-top: 4px;
+    border: 1px solid #2D70FD;
+    border-radius: 4px;
+    background-color: #b6d8f774;
+    font-family: 'Inter';
+    font-size: 13px;
+    color: #405175;
+    outline: none;
+}
+
+.modal_desc {
+    width: 400px;
+    height: 50px;
+    padding-bottom: 50px;
+}
+
+.modal_desc > textarea {
+    margin-top: 4px;
+    border:  1px solid #2D70FD;
+    border-radius: 4px;
+    background-color: #b6d8f774;
+    font-family: 'Inter';
+    font-size: 13px;
+    color: #405175;
+    resize: none;
+    outline: none;
+}
+
+.modal_buttons {
+    position: absolute;
+    right: 50px;
+}
+
+.modal_button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.cancel_button {
+    background-color: red;
+    color: #fff;
+}
+
+.cancel_button:hover {
+    background-color: rgba(255, 0, 0, 0.661);
+}
+
+.create_button {
+    background-color: green;
+    color: #fff;
+}
+
+.create_button:hover {
+    background-color: rgba(0, 128, 0, 0.65);
+}

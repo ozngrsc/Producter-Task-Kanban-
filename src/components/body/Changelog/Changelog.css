@@ -1,0 +1,16 @@
+.changelog {
+    flex: 0.8;
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+
+.changelog > h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 500px;
+    padding-bottom: 500px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #405175;
+}

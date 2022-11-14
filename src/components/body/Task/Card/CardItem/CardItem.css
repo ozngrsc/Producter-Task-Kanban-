@@ -1,0 +1,59 @@
+.cardItem {
+    width: 242px;
+    height: 100%;
+    border: 1px solid rgba(0, 23, 71, 0.05);
+    border-radius: 4px;
+    margin: 24px 24px 24px 24px;
+    background-color: #fff;
+}
+
+.cardItem > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #405175;
+    padding: 12px;
+}
+
+.cardItem_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.cardItem_bottom_left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-left: 12px;
+}
+
+.cardItem_bottom_left > h4 {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 13px;
+    color: #8C97AC;
+}
+
+.cardItem_bottom_right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 12px;
+}
+
+.cardItem_bottom_right > button {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #001747;
+    width: 100%;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #8C97AC;
+    border-radius: 4px;
+}

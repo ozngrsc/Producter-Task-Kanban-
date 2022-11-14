@@ -1,0 +1,61 @@
+.card {
+    width: 290px;
+    height: 70vh;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 23, 71, 0.07);
+    border-radius: 8px;
+    margin: 24px 24px;    
+}
+
+.card > hr {
+    margin-left: 24px;
+    margin-right: 24px;
+    border: 1px solid #F6F9FB;
+}
+
+.card_header {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.card_header_left {
+    display: flex;
+    align-items: center;
+}
+
+.card_header_left > h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.018em;
+    color: #001747;
+    padding-left: 8px;
+}
+
+.card_header_left > input[type='radio'] {
+    -webkit-appearance:none;
+    width:16px;
+    height:16px;
+    border:1px dotted darkgray;
+    border-radius:50%;
+    outline:none;
+  }
+
+.card_header_right > button {
+    width: 31px;
+    height: 24px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    color: #2D70FD;
+    background-color: #b6d8f774;
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+}
+

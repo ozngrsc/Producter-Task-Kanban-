@@ -1,0 +1,17 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarOption > h4 {
+    padding-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    width: 200px;
+}
+
+.sidebarIcons {
+    width: 16px !important;
+    height: 16px !important;
+}
